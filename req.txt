@@ -1,0 +1,81 @@
+MODELS:
+-Suppliers(DONE)
+	-name
+	-address
+	-contact peron
+	-contact
+	-note
+
+
+
+
+-Customers(DONE)
+	-name
+	-address
+	-contact
+	-product name
+	-total
+	-note
+	-expected date
+
+
+-Categories(DONE)
+	-name
+
+-Product(DONE)
+	-code(auto-gen)
+	-name
+	-category(from Category model)
+	-arrival
+	-expiry
+	-selling price
+	-original price
+	-profit (selling price - original price)
+	-supplier(from Supplier model)
+	-quantity
+
+
+-Sales
+	-product (from Product model) req
+	-customer (from Customer model) 
+	-quantity req
+	-amount (quantity * product.price)
+	-profit 
+	-cash req
+	-change
+	-invoice number
+	-transaction ID
+	-transaction date
+
+-Position(DONE)
+	-name
+	-permissions (from Permission model)
+-Permission(DONE)
+	-name
+
+-Users(DONE)
+	-username
+	-password
+	-fullname
+	-position (from Position model)
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
